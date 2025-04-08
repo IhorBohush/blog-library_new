@@ -22,7 +22,21 @@
     --link-hover-color: #0d9c4d;
     --link-hover-color-light: #ffffff;
     --page-background-color: #f7f8fa;
+    --btn-hover-text-color: #1b1a1a;
     --btn-border-radius: 34px
+}
+
+.header {
+  background: linear-gradient(
+        rgb(38, 30, 28, 0.7), 
+        rgb(52, 46, 46, 0.7)
+    ), url("../img/library-header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 .container {

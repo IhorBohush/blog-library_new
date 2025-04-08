@@ -1,0 +1,14 @@
+.header__nav {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: row;
+    @media (min-width: 768px) {
+        padding: 20px 32px;
+    }
+    @media (min-width: 992px) {
+        padding: 20px 40px;
+    }
+    @media (min-width: 1280px) {
+        padding: 20px 15px;
+    }
+}
