@@ -1,7 +1,7 @@
 .hero {
     background: linear-gradient(
-        rgb(38, 30, 28, 0.5), 
-        rgb(52, 46, 46, 0.5)
+        rgb(38, 30, 28, 0.7), 
+        rgb(52, 46, 46, 0.7)
     ), url("../img/library-header.png");
     background-size: cover;
     background-position: center;
@@ -11,19 +11,88 @@
     height: 100%;
 
     .hero__container {
-        padding: 100px 24px;
+        padding: 100px 0 130px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         @media (min-width: 768px) {
-            padding: 100px 32px;
+            padding: 145px 0 210px;
         }
         @media (min-width: 992px) {
-            padding: 165px 40px 175px;
+            padding: 190px 0 290px;
         }
-        @media (min-width: 1280px) {
-            padding: 165px 15px 175px;
+
+        .hero__title {
+            display: block;
+            position: relative;
+            text-align: center;
+            color: var(--light-color);
+            justify-content: center;
+            font-weight: 500;
+            font-size: 3.75rem;
+            @media (min-width: 768px) {
+                font-size: 4.6875rem;
+            }
+            @media (min-width: 992px) {
+                font-size: 5.625rem;
+            }
         }
+        .hero__description {
+            margin: 35px 0 0;
+            display: block;
+            position: relative;
+            font-family: var(--secondary-font);
+            text-align: center;
+            color: var(--light-color);
+            justify-content: center;
+            font-weight: 400;
+            font-size: 1.125rem;
+            @media (min-width: 992px) {
+                margin: 40px 0 0;
+            }
+        }
+        .hero__buttons {
+            margin: 50px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            @media (min-width: 407px) {
+                flex-direction: row;
+            }
+        }
+            .hero__button {
+                margin: 10px;
+                padding: 16px 32px;
+                display: block;
+                position: relative;
+                text-decoration: none;
+                border-radius: var(--btn-border-radius);
+                font-weight: 700;
+                font-size: 0.9625rem;
+                color: var(--light-color);
+                text-align: center;
+            }
+            .hero__button--primary {
+                background-color: var(--brand-color);
+                transition: background-color ease;
+
+                &:hover {
+                    background-color: var(--link-hover-color);
+                }
+            }
+            .hero__button--secondary {
+                background: none;
+                transition: background 0.2s ease;
+                @media (min-width: 336px) {
+                    margin: 0 0 0 10px;
+                }
+                
+                &:hover {
+                    color: rgb(52, 46, 46);
+                    background: var(--color-light);
+                }
+            }
     }
 }
