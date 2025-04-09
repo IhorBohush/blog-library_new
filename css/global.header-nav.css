@@ -2,6 +2,7 @@
     padding: 20px 24px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     @media (min-width: 768px) {
         padding: 20px 32px;
     }
@@ -10,5 +11,72 @@
     }
     @media (min-width: 1280px) {
         padding: 20px 15px;
+    }
+    .header__logo {
+        margin: 0 15px;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    
+        .header__logo--item {
+            text-decoration: none;
+            font-size: 1.625rem;
+            font-weight: 700;
+        }
+        .header__library {
+            color: var(--brand-color);
+        }
+        .header__paicpe {
+            color: var(--light-color);
+        }
+    }
+    .header__menu {
+        display: none;
+        @media (min-width: 992px) {
+            margin: 0 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            .header__menu--item {
+                margin: 5px 7.5px;
+                position: relative;
+                list-style-type: none;
+                .header__menu--link {
+                    font-family: var(--secondary-font);
+                    color: var(--light-color);
+                    font-size: 1rem;
+                    font-weight: 600;
+                    text-decoration: none;   
+                }
+            }
+        }
+    }
+    .header__burger {
+        display: block;
+        width: 24px;
+        background: none;
+        border: none;
+        @media (min-width: 992px) {
+            display: none;
+        }
+        .header__burger--line {
+            display: block;
+            position: relative;
+            width: 24px;
+            height: 2px;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-color);
+        }
+        .header__burger--line::before {
+            content: '';
+            position: absolute;
+            /* bottom: 0; */
+        }
     }
 }
