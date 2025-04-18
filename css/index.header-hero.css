@@ -29,7 +29,7 @@
             text-align: center;
             color: var(--light-color);
             justify-content: center;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 3.75rem;
             @media (min-width: 768px) {
                 font-size: 4.6875rem;
